@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/mainWidgets/mainHome.dart';
 import 'mainWidgets/myHomePage.dart';
 
 void main() {
@@ -15,9 +14,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MainHome(),
+          primaryColor: Color(0xff1976d2),
+          colorScheme:
+              ColorScheme.fromSwatch().copyWith(secondary: Color(0xff9e9e9e)),
+          fontFamily: 'Georgia',
+          textTheme: TextTheme(
+              headline1: TextStyle(fontSize: 36, fontStyle: FontStyle.italic),
+              bodyText1: TextStyle(fontSize: 16, fontWeight: FontWeight.bold))),
+      home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
