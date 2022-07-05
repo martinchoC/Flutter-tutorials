@@ -1,16 +1,4 @@
-# flutter_application_2_layouts
+# Layouts: Column, Row and Expanded Widget
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+A new Flutter project to understand the use of Column, Row and Expanded Widgets
+![result](https://user-images.githubusercontent.com/25466465/177398110-040d566b-e7de-4488-9cb1-ce08dc3a8d73.png)
