@@ -35,15 +35,16 @@ class _MyHomePageState extends State<MyHomePage> {
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
           color: Colors.deepPurple,
-          margin: EdgeInsets.only(top: 25),
+          margin: const EdgeInsets.only(top: 25),
           shadowColor: Colors.deepPurpleAccent,
           elevation: 40,
-          child: SizedBox(
+          child: const SizedBox(
               width: 200,
               height: 100,
               child: Text(
                 "Card con texto",
                 style: TextStyle(color: Colors.white),
+                textAlign: TextAlign.center,
               )),
         ),
       ),
