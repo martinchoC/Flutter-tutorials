@@ -1,16 +1,11 @@
-# components_05_listview
+# ListView
 
-A new Flutter project.
+ListView is a scrollable list of widgets arranged linearly. It displays its children one after another in the scroll direction i.e, vertical or horizontal.
 
-## Getting Started
+* Vertical ListView using a Card widget
 
-This project is a starting point for a Flutter application.
+![Screenshot_1657337882](https://user-images.githubusercontent.com/25466465/178091068-4d5018bf-c446-4a1a-98f0-fea4c5dd36fd.png)
 
-A few resources to get you started if this is your first Flutter project:
+* Horizontal ListView using a Card widget
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot_1657339397](https://user-images.githubusercontent.com/25466465/178091073-f13bd6c2-7560-4b8e-8781-f1ee917b98d1.png)
