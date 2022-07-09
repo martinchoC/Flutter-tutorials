@@ -1,4 +1,4 @@
-# components_05_listview
+# ListView
 
 ListView is a scrollable list of widgets arranged linearly. It displays its children one after another in the scroll direction i.e, vertical or horizontal.
 
