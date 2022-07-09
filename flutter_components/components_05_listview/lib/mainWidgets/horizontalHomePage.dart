@@ -26,15 +26,15 @@ class _MyHomePageState extends State<HorizontalHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Container(
-          height: MediaQuery.of(context).size.height * 0.2,
+      body: SizedBox(
+        height: MediaQuery.of(context).size.height * 0.2,
+        child: SafeArea(
           child: ListView.builder(
             padding: const EdgeInsets.all(10),
             scrollDirection: Axis.horizontal,
             itemCount: list_titles.length,
             itemBuilder: (BuildContext context, int index) {
-              return Container(
+              return SizedBox(
                 width: MediaQuery.of(context).size.width * 0.4,
                 child: Card(
                   color: Colors.blue,
