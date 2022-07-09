@@ -27,114 +27,38 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  List<String> list_titles = <String>[
+    "Widget 1",
+    "Widget 2",
+    "Widget 3",
+    "Widget 4",
+    "Widget 5",
+    "Widget 6",
+    "Widget 7",
+    "Widget 8",
+    "Widget 9",
+    "Widget 10",
+    "Widget 11",
+    "Widget 12",
+    "Widget 13"
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: ListView(
-      children: <Widget>[
-        Card(
-          color: Colors.amber[600],
-          child: ListTile(
-            title: Text("Widget 1"),
-          ),
+      body: SafeArea(
+        child: ListView.builder(
+          padding: const EdgeInsets.all(10),
+          itemCount: list_titles.length,
+          itemBuilder: (BuildContext context, int index) {
+            return Card(
+              color: Colors.blue,
+              child: ListTile(
+                title: Text(list_titles[index]),
+              ),
+            );
+          },
         ),
-        Card(
-          color: Colors.amber[600],
-          child: ListTile(
-            title: Text("Widget 2"),
-          ),
-        ),
-        Card(
-          color: Colors.amber[600],
-          child: ListTile(
-            title: Text("Widget 3"),
-          ),
-        ),
-        Card(
-          color: Colors.amber[600],
-          child: ListTile(
-            title: Text("Widget 4"),
-          ),
-        ),
-        Card(
-          color: Colors.amber[600],
-          child: ListTile(
-            title: Text("Widget 5"),
-          ),
-        ),
-        Card(
-          color: Colors.amber[600],
-          child: ListTile(
-            title: Text("Widget 6"),
-          ),
-        ),
-        Card(
-          color: Colors.amber[600],
-          child: ListTile(
-            title: Text("Widget 7"),
-          ),
-        ),
-        Card(
-          color: Colors.amber[600],
-          child: ListTile(
-            title: Text("Widget 8"),
-          ),
-        ),
-        Card(
-          color: Colors.amber[600],
-          child: ListTile(
-            title: Text("Widget 9"),
-          ),
-        ),
-        Card(
-          color: Colors.amber[600],
-          child: ListTile(
-            title: Text("Widget 10"),
-          ),
-        ),
-        Card(
-          color: Colors.amber[600],
-          child: ListTile(
-            title: Text("Widget 11"),
-          ),
-        ),
-        Card(
-          color: Colors.amber[600],
-          child: ListTile(
-            title: Text("Widget 12"),
-          ),
-        ),
-        Card(
-          color: Colors.amber[600],
-          child: ListTile(
-            title: Text("Widget 13"),
-          ),
-        ),
-        Card(
-          color: Colors.amber[600],
-          child: ListTile(
-            title: Text("Widget 14"),
-          ),
-        ),
-        Card(
-          color: Colors.amber[600],
-          child: ListTile(
-            title: Text("Widget 15"),
-          ),
-        ),
-        Card(
-          color: Colors.amber[600],
-          child: ListTile(
-            title: Text("Widget 16"),
-          ),
-        ),
-        Card(
-          color: Colors.amber[600],
-          child: ListTile(
-            title: Text("Widget 17"),
-          ),
-        ),
-      ],
-    ));
+      ),
+    );
   }
 }
