@@ -1,5 +1,4 @@
 import 'package:components_06_gridview/homeDirection/dynamicElements.dart';
-import 'package:components_06_gridview/homeDirection/staticElements.dart';
 import 'package:flutter/material.dart';
 
 void main() {
