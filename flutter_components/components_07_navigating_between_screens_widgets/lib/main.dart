@@ -1,4 +1,5 @@
 import 'package:components_07_navigating_between_screens_widgets/pages/firstPage.dart';
+import 'package:components_07_navigating_between_screens_widgets/pages/secondPage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const FirstPageWidget(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => FirstPageWidget(),
+        '/secondPage': (context) => SecondPageWidget()
+      },
     );
   }
 }
