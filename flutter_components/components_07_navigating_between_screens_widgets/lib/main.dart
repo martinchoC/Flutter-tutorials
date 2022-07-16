@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => FirstPageWidget(),
-        '/secondPage': (context) => SecondPageWidget()
+        '/': (context) => const FirstPageWidget(),
+        '/secondPage': (context) => const SecondPageWidget()
       },
     );
   }
