@@ -1,4 +1,4 @@
-import 'package:components_07_navigating_between_screens_widgets/pages/secondPage.dart';
+import 'secondPage.dart';
 import 'package:flutter/material.dart';
 
 class FirstPageWidget extends StatelessWidget {
