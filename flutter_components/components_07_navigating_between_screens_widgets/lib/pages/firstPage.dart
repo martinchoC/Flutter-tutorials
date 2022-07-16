@@ -1,6 +1,5 @@
+import 'package:components_07_navigating_between_screens_widgets/pages/secondPage.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class FirstPageWidget extends StatelessWidget {
   const FirstPageWidget({Key? key}) : super(key: key);
@@ -18,7 +17,13 @@ class FirstPageWidget extends StatelessWidget {
           child: const Text(
             'Go to page 2',
           ),
-          onPressed: () {},
+          onPressed: () {
+            //go to second page
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const SecondPageWidget()),
+            );
+          },
         ),
       ),
     );
