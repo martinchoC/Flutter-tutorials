@@ -1,3 +1,4 @@
+import 'package:components_08_passing_data_between_screens/widgetArguments.dart';
 import 'package:flutter/material.dart';
 
 class SecondPageWidget extends StatelessWidget {
@@ -5,16 +6,18 @@ class SecondPageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final arguments =
+        ModalRoute.of(context)!.settings.arguments as WidgetArguments;
     return Scaffold(
-      appBar: AppBar(title: const Text('Second Page')),
+      appBar: AppBar(title: Text(arguments.title)),
       body: Center(
         child: TextButton(
           style: TextButton.styleFrom(
               primary: Colors.white,
               elevation: 2,
               backgroundColor: Colors.blueAccent),
-          child: const Text(
-            'Go to page 1',
+          child: Text(
+            'To home from ${arguments.number}',
           ),
           onPressed: () {
             //go to main page

@@ -1,3 +1,5 @@
+import 'package:components_08_passing_data_between_screens/widgetArguments.dart';
+
 import 'secondPage.dart';
 import 'package:flutter/material.dart';
 
@@ -7,7 +9,7 @@ class FirstPageWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('First Page')),
+      appBar: AppBar(title: Text('First Page')),
       body: Center(
         child: TextButton(
           style: TextButton.styleFrom(
@@ -19,9 +21,10 @@ class FirstPageWidget extends StatelessWidget {
           ),
           onPressed: () {
             //go to second page
-            Navigator.push(
+            Navigator.pushNamed(
               context,
-              MaterialPageRoute(builder: (context) => const SecondPageWidget()),
+              '/secondPage',
+              arguments: WidgetArguments("Going to Screen 2", 2),
             );
           },
         ),
