@@ -58,17 +58,46 @@ class _MyHomePageState extends State<MyHomePage> {
                   backgroundColor: Colors.blueGrey,
                   disabledForegroundColor: Colors.grey),
               onPressed: () {},
-              child: Text('Outlined button'),
+              child: const Text('Outlined button'),
             ),
-            //ElevatedButton - ex RaisedButton
+            //ElevatedButton simple - ex RaisedButton
+            ElevatedButton(
+              onPressed: () {},
+              child: const Text(
+                'Elevated Button simple',
+                style: TextStyle(fontSize: 10),
+              ),
+            ),
+            //ElevatedButton - algo más costumizado
+            ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.green,
+                  textStyle: const TextStyle(
+                      color: Colors.black,
+                      fontSize: 10,
+                      fontStyle: FontStyle.italic)),
+              child: const Text('Elevated button costumizado'),
+            ),
+            //Otra opcion de ElevatedButton con gradiente
             ElevatedButton(
               onPressed: () {},
               child: Container(
-                decoration: BoxDecoration(
-                    gradient:
-                        LinearGradient(colors: [Colors.green, Colors.blue])),
+                decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [Colors.white, Colors.blue],
+                  ),
+                ),
+                padding: const EdgeInsets.all(10.0),
+                child: const Text(
+                  'Gradient Button',
+                  style: TextStyle(
+                    fontSize: 10,
+                    color: Colors.black,
+                  ),
+                ),
               ),
-            )
+            ),
           ],
         ),
       ),
