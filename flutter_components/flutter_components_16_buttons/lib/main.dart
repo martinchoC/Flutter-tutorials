@@ -66,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Container(
                 decoration: BoxDecoration(
                     gradient:
-                        LinearGradient(colors: [Color.green, Color.blue])),
+                        LinearGradient(colors: [Colors.green, Colors.blue])),
               ),
             )
           ],
