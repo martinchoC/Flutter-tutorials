@@ -101,6 +101,11 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+      //FloatingActionButton - FAB
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add),
+      ),
     );
   }
 }
